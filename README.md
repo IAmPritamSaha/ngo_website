@@ -1,6 +1,4 @@
 # 🌍 Ononto NGO - Modern Web Solution
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/your-netlify-id/deploy-status)](https://ononto.netlify.app)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/IAmPritamSaha/ngo_website/blob/main/LICENSE.md)
 
 **Ononto** is a high-performance, fully responsive website designed for NGOs to bridge the gap between social causes and digital accessibility. It features a sleek dark-themed UI/UX, real-time location features, and a seamless donation flow.
