@@ -3,140 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ononto/About</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-	<link href="css/about.css" rel="stylesheet">
-    <style>
-        .footer-bottom a {
-    text-decoration: none;
-}
-
-    </style>
+    <title>Ononto — About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
 
-<header>
+<!-- ===== HEADER ===== -->
+<header id="mainHeader">
     <div class="nav-container">
         <a href="index.html" class="logo">
-            <img src="pic/1.png" alt="Logo" style="width: 50px; height: 50px; border-radius: 50%; border: 2px solid white;">
-            <span>Ononto</span>
+            <img src="pic/1.png" alt="Ononto Logo">
+            <span class="logo-text">Ononto Welfare</span>
         </a>
-        <nav class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="query.html">Query</a>
-            <a href="gpay.html">Donate Us</a>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html"   class="nav-link">Home</a>
+            <a href="about.html"   class="nav-link">About</a>
+            <a href="gallery.html" class="nav-link">Our Work</a>
+            <a href="member.html"  class="nav-link">Members</a>
+            <a href="query.html"   class="nav-link">Query</a>
+            <a href="gpay.html"    class="nav-link nav-donate">
+                <i class="fas fa-heart"></i> Donate Now
+            </a>
         </nav>
-        <button class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
         </button>
     </div>
 </header>
 
-<section class="section">
-    <h3>Our Mission</h3>
-    <p>Ononto, established in 2024, is a dedicated non-profit organization committed to addressing food insecurity and fostering community well-being. Through strategic partnerships and grassroots efforts, we aim to provide essential resources, raise awareness, and empower communities to thrive. We believe that no one should go hungry, and that by working together, we can create lasting change in our world.</p>
-    <br>
- <h3>Our Approach</h3>
-    <p>We tackle the issue of food insecurity through local food banks, educational programs, and sustainable agricultural practices. Our work extends beyond just providing food; we aim to create a long-term impact by addressing the root causes of poverty and hunger.</p>
-    <br>
-    <h3>Our Impact</h3>
-    <p>Since our inception, we have impacted over 100,000 lives through our various initiatives. Our partnerships with schools, local businesses, and volunteers have made it possible to distribute nutritious meals to communities in need.</p>
+<!-- ===== MOBILE OVERLAY (outside header) ===== -->
+<div class="menu-overlay" id="menuOverlay">
+    <div class="overlay-bar">
+        <span class="overlay-logo">Ononto Welfare</span>
+        <button class="overlay-close" id="overlayCloseBtn" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+</div>
+
+<!-- ============================================================
+     ABOUT HERO
+     ============================================================ -->
+<section class="about-hero">
+    <div class="about-hero-bg"></div>
+    <div class="about-hero-overlay"></div>
+    <div class="about-hero-shapes">
+        <div class="ahs ahs-1"></div>
+        <div class="ahs ahs-2"></div>
+        <div class="ahs ahs-3"></div>
+    </div>
+    <div class="about-hero-content">
+        <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Est. 2021 · Howrah, West Bengal
+        </div>
+        <h1 class="about-hero-title">
+            <span class="hero-static">We Are</span>
+            <span class="hero-highlight">Ononto</span>
+        </h1>
+        <p class="about-hero-sub">A dedicated non-profit committed to addressing food insecurity, fostering community well-being, and empowering lives through compassion and action.</p>
+        <div class="about-hero-actions">
+            <a href="gpay.html"  class="btn-primary"><i class="fas fa-heart"></i><span>Donate Now</span></a>
+            <a href="bcv.html"   class="btn-outline"><span>Join Us</span><i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+    
+    </div>
 </section>
 
-<section class="section">
-    <h3>Our Core Values</h3>
-    <div class="card-container">
-        <div class="card">
-            <i class="fas fa-heart"></i>
-            <h4>Compassion</h4>
-            <p>We approach every person with care and understanding, providing resources and support with empathy. Compassion is at the core of our mission to help those in need.</p>
+<!-- ============================================================
+     MISSION / APPROACH / IMPACT
+     ============================================================ -->
+<section class="about-intro reveal-section">
+    <div class="container">
+        <div class="section-header centered-header">
+            <span class="section-tag">Who We Are</span>
+            <h2 class="section-title">Our <em>Story</em></h2>
+            <p class="section-desc">Since 2021, Ononto has been driven by one belief — no one should go hungry. Here's what guides us every day.</p>
         </div>
-        <div class="card">
-            <i class="fas fa-users"></i>
-            <h4>Collaboration</h4>
-            <p>We believe in the power of community and work together to achieve sustainable solutions. Collaboration is key to creating meaningful change that benefits everyone.</p>
-        </div>
-        <div class="card">
-            <i class="fas fa-leaf"></i>
-            <h4>Sustainability</h4>
-            <p>Our efforts are guided by the principle of sustainability, ensuring a better future for generations to come. We are committed to eco-friendly practices and long-term growth.</p>
-        </div>
-        <div class="card">
-            <i class="fas fa-lightbulb"></i>
-            <h4>Innovation</h4>
-            <p>We continually look for new and innovative solutions to the challenges of hunger and poverty. We embrace creativity and adaptability to drive positive change.</p>
-        </div>
-        <div class="card">
-            <i class="fas fa-hand-holding-heart"></i>
-            <h4>Integrity</h4>
-            <p>We operate with transparency, honesty, and accountability. Our commitment to integrity ensures that every donation and effort is used for its intended purpose.</p>
+        <div class="intro-grid">
+            <div class="intro-card reveal-item" data-delay="0">
+                <div class="intro-icon"><i class="fas fa-bullhorn"></i></div>
+                <div class="intro-num">01</div>
+                <h3>Our Mission</h3>
+                <p>Ononto is committed to addressing food insecurity and fostering community well-being. Through strategic partnerships and grassroots efforts, we provide essential resources, raise awareness, and empower communities to thrive. We believe no one should go hungry.</p>
+            </div>
+            <div class="intro-card reveal-item" data-delay="150">
+                <div class="intro-icon"><i class="fas fa-route"></i></div>
+                <div class="intro-num">02</div>
+                <h3>Our Approach</h3>
+                <p>We tackle food insecurity through local food banks, educational programs, and sustainable agricultural practices. Our work extends beyond providing food — we address the root causes of poverty and hunger to create long-term impact in our communities.</p>
+            </div>
+            <div class="intro-card reveal-item" data-delay="300">
+                <div class="intro-icon"><i class="fas fa-chart-line"></i></div>
+                <div class="intro-num">03</div>
+                <h3>Our Impact</h3>
+                <p>Since inception, we have impacted over 100,000 lives through various initiatives. Our partnerships with schools, local businesses, and volunteers have made it possible to distribute nutritious meals and support to communities in need.</p>
+            </div>
         </div>
     </div>
 </section>
 
-
-<section class="cta">
-   <h3> <p>Join us in making a difference today!</p><br><br></h3>
-    <a href="gpay.html">Donate Now</a>
-</section>
-<br><br><br>
-
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-content">
-            <div class="footer-section brand-section">
-                <div class="brand-logo">Ononto</div>
-                <p>Empowering communities through sustainable development and innovative solutions. Together, we create lasting impact for a better tomorrow.</p>
+<!-- ============================================================
+     STATS BAND
+     ============================================================ -->
+<section class="stats-band reveal-section">
+    <div class="container">
+        <div class="stats-band-grid">
+            <div class="sb-stat">
+                <div class="sb-icon"><i class="fas fa-users"></i></div>
+                <div class="sb-info">
+                    <span class="sb-num" data-target="1500">0</span><span class="sb-plus">+</span>
+                    <p>Lives Impacted</p>
+                </div>
             </div>
-            
-            <div class="footer-section quick-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="query.html">Query</a></li>
-                    <li><a href="gallery.html">Our Work</a></li>
-                    <li><a href="gpay.html">Donate Us</a></li>
-                    <li><a href="member.html">Meet Our Members</a></li>
-                      <li><a href="bcv.html"><b>Become a Member</b></a></li>
-                </ul>
+            <div class="sb-divider"></div>
+            <div class="sb-stat">
+                <div class="sb-icon"><i class="fas fa-utensils"></i></div>
+                <div class="sb-info">
+                    <span class="sb-num" data-target="2000">0</span><span class="sb-plus">+</span>
+                    <p>Meals Donated</p>
+                </div>
             </div>
-
-            <div class="footer-section contact-info">
-                <h3>Contact Us</h3>
-                <p><i class="fas fa-envelope"></i>ononto.welfare@gmail.com</p>
-                <p><i class="fas fa-phone"></i>+91 6290652802 / 96744 57321</p>
-
-                <p><i class="fas fa-map-marker-alt"></i> Salkia, Howrah, WestBengal, India</p>
+            <div class="sb-divider"></div>
+            <div class="sb-stat">
+                <div class="sb-icon"><i class="fas fa-calendar-check"></i></div>
+                <div class="sb-info">
+                    <span class="sb-num" data-target="10">0</span><span class="sb-plus">+</span>
+                    <p>Events Held</p>
+                </div>
             </div>
-
-            <div class="footer-section">
-                <h3>Connect With Us</h3>
-                <p>Join our community and stay updated with our latest initiatives.</p>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/profile.php?id=61567180577084&mibextid=ZbWKwL" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                   <a href="https://wa.me/919477611641" target="_blank">
-   <i class="fab fa-whatsapp"></i>
-</a>
-
-                    <a href="https://www.instagram.com/ononto.welfare?igsh=YmJ4bTNkOHM4b21u" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/ononto?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <div class="sb-divider"></div>
+            <div class="sb-stat">
+                <div class="sb-icon"><i class="fas fa-handshake"></i></div>
+                <div class="sb-info">
+                    <span class="sb-num" data-target="50">0</span><span class="sb-plus">+</span>
+                    <p>Volunteers</p>
                 </div>
             </div>
         </div>
+    </div>
+</section>
 
-        <div class="footer-bottom">
-            <p>&copy; 2024 Ononto. All Rights Reserved. | Designed with ♥ by <a href="https://infinova.netlify.app"><span class="designer-credit">Infinova</span></a></p>
+<!-- ============================================================
+     CORE VALUES
+     ============================================================ -->
+<section class="core-values reveal-section">
+    <div class="container">
+        <div class="section-header centered-header">
+            <span class="section-tag">What Drives Us</span>
+            <h2 class="section-title">Our Core <em>Values</em></h2>
+            <p class="section-desc">These five principles shape every decision we make and every life we touch.</p>
+        </div>
+        <div class="values-grid">
+            <div class="value-card reveal-card" data-delay="0">
+                <div class="value-icon"><i class="fas fa-heart"></i></div>
+                <h4>Compassion</h4>
+                <p>We approach every person with care and understanding, providing resources and support with empathy. Compassion is at the core of our mission.</p>
+            </div>
+            <div class="value-card reveal-card" data-delay="100">
+                <div class="value-icon"><i class="fas fa-users"></i></div>
+                <h4>Collaboration</h4>
+                <p>We believe in the power of community and work together to achieve sustainable solutions. Collaboration creates meaningful change that benefits everyone.</p>
+            </div>
+            <div class="value-card reveal-card" data-delay="200">
+                <div class="value-icon"><i class="fas fa-leaf"></i></div>
+                <h4>Sustainability</h4>
+                <p>Our efforts are guided by sustainability, ensuring a better future for generations to come. We commit to eco-friendly practices and long-term growth.</p>
+            </div>
+            <div class="value-card reveal-card" data-delay="300">
+                <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
+                <h4>Innovation</h4>
+                <p>We continually look for new solutions to challenges of hunger and poverty. We embrace creativity and adaptability to drive positive change.</p>
+            </div>
+            <div class="value-card reveal-card" data-delay="400">
+                <div class="value-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                <h4>Integrity</h4>
+                <p>We operate with transparency, honesty, and accountability. Every donation and effort is used exactly for its intended purpose — always.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     CTA BANNER
+     ============================================================ -->
+<section class="about-cta reveal-section">
+    <div class="about-cta-bg"></div>
+    <div class="container">
+        <div class="about-cta-inner">
+            <span class="section-tag light-tag">Take Action</span>
+            <h2 class="about-cta-title">Join Us in Making a<br><em>Difference Today</em></h2>
+            <p>Your support — whether through a donation, volunteering, or spreading the word — creates real, lasting change for families in need.</p>
+            <div class="about-cta-btns">
+                <a href="gpay.html" class="btn-white"><i class="fas fa-heart"></i><span>Donate Now</span></a>
+                <a href="bcv.html"  class="btn-outline-white"><span>Become a Member</span><i class="fas fa-user-plus"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-grid container">
+            <div class="footer-brand">
+                <div class="footer-logo">Ononto</div>
+                <p>Empowering communities through sustainable development and innovative solutions. Together, we create lasting impact for a better tomorrow.</p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/share/14ZFZ2RHsVR/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/916290652802" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/ononto_welfare?igsh=MW8xN2wxcmp3aTVibQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ononto-welfare-06932a386?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-links-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="gallery.html">Our Work</a></li>
+                    <li><a href="member.html">Members</a></li>
+                    <li><a href="query.html">Query</a></li>
+                    <li><a href="gpay.html">Donate</a></li>
+                    <li><a href="bcv.html"><strong>Become a Member</strong></a></li>
+                </ul>
+            </div>
+            <div class="footer-contact-col">
+                <h4>Contact Us</h4>
+                <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>ononto.welfare@gmail.com</span></div>
+                <div class="footer-contact-item"><i class="fas fa-phone"></i><span>+91 6290652802 / 96744 57321</span></div>
+                <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Salkia, Howrah, West Bengal, India</span></div>
+                <a href="gpay.html" class="footer-donate-btn"><i class="fas fa-heart"></i> Donate Now</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2026 Ononto. All Rights Reserved. | Designed by <a href="https://pritam03.netlify.app" target="_blank">Pritam</a></p>
         </div>
     </div>
 </footer>
 
-<script src="js/about.js"></script><script>
-(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="dDjZMxiWZldkdqePBr43W";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-</script>
+<script src="js/main.js"></script>
+<script src="js/about.js"></script>
 
+<!-- Chatbase -->
+<script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...a)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(a)};window.chatbase=new Proxy(window.chatbase,{get(t,p){if(p==="q")return t.q;return(...a)=>t(p,...a)}})}const l=function(){const s=document.createElement("script");s.src="https://www.chatbase.co/embed.min.js";s.id="dDjZMxiWZldkdqePBr43W";s.domain="www.chatbase.co";document.body.appendChild(s)};if(document.readyState==="complete")l();else window.addEventListener("load",l)})();
+</script>
 </body>
 </html>

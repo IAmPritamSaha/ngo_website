@@ -3,187 +3,324 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ononto/Donate Us</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    
-<link href ="css/gpay.css" rel="stylesheet">
-<style>
-    .footer-bottom a {
-    text-decoration: none;
-}
-
-</style>
+    <title>Ononto — Donate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/gpay.css">
 </head>
 <body>
-    <header>
-        <div class="nav-container">
-            <a href="index.html" class="logo">
-                <img src="pic/1.png" alt="Ononto Logo">
-                <span>Ononto</span>
+
+<!-- ===== HEADER ===== -->
+<header id="mainHeader">
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <img src="pic/1.png" alt="Ononto Logo">
+            <span class="logo-text">Ononto Welfare</span>
+        </a>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html"   class="nav-link">Home</a>
+            <a href="about.html"   class="nav-link">About</a>
+            <a href="gallery.html" class="nav-link">Our Work</a>
+            <a href="member.html"  class="nav-link">Members</a>
+            <a href="query.html"   class="nav-link">Query</a>
+            <a href="gpay.html"    class="nav-link nav-donate">
+                <i class="fas fa-heart"></i> Donate Now
             </a>
-            <nav class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="query.html">Query</a>
-                <a href="gpay.html">Donate Us</a>
-            </nav>
-            <button class="hamburger" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </header>
-
-    <div class="content">
-        <section class="hero">
-            <h1>Support Our Cause</h1>
-            <p>Your contribution can make a real difference in someone's life. Join us in our mission to create positive change.</p>
-            <a href="#donate-section" class="cta">Donate Now</a>
-        </section>
-
-      <!--   <section id="donate-section" class="donation-section">
-            <div class="donation-container">
-                <div class="donation-grid">
-                    <div class="donation-info">
-                        <h2>Why Donate to Ononto?</h2>
-                        <p>Your support enables us to continue our vital work in the community. Every donation, big or small, helps us make a difference.</p>
-                        
-                        <div class="impact-stats">
-                            <div class="stat-card">
-                                <h3>100+</h3>
-                                <p>Families Supported</p>
-                            </div>
-                            <div class="stat-card">
-                                <h3>50+</h3>
-                                <p>Education Programs</p>
-                            </div>
-                            <div class="stat-card">
-                                <h3>200+</h3>
-                                <p>Volunteers</p>
-                            </div>
-                            <div class="stat-card">
-                                <h3>20+</h3>
-                                <p>Communities Reached</p>
-                            </div>
-                        </div>
- -->
-                        <div class="donation-methods">
-                          <center>  <h3>Other Ways to Support</h3></center>
-                            <div class="method-card">
-                                <i class="fas fa-building-columns"></i>
-                                <div>
-                                    <h4>Bank Transfer</h4>
-                                    <p>Account details available upon request.</p>
-                                    Please Contact On WhatsApp.  
-                                </div>
-                            </div>
-                            <div class="method-card">
-                                <i class="fas fa-mobile-alt"></i>
-                                <div>
-                                    <h4>Mobile Payment</h4>
-                                    <p>UPI: malasaha120-1@okaxis</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="qr-section">
-                        <h2>Scan to Donate</h2>
-                        <p>Use any UPI app to make your contribution</p>
-                        <div class="qr-container">
-                            <img src="pic/g.jpg" alt="Donation QR Code" class="qr-code">
-                        </div>
-                        <p style="margin-top: 1.5rem; font-weight: 500;">Or contact us directly:</p>
-                        <p><i class="fas fa-phone"></i> +91 6290652802 / 96744 57321</p>
-                        <p><i class="fas fa-envelope"></i> ononto.welfare@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="testimonial-section">
-            <div class="testimonial-container">
-                <h2 style="text-align: center; color: var(--primary-color); margin-bottom: 2rem;">What Our Donors Say</h2>
-                <div class="testimonial-grid">
-                    <div class="testimonial-card">
-                        <img src="pic/d1.jpg" alt="Donor">
-                        <h4>Tanushree Roy</h4>
-                        <p>"Supporting Ononto has been incredibly rewarding. Their transparency and dedication to the cause is truly inspiring."</p>
-                    </div>
-                    <div class="testimonial-card">
-                        <img src="pic/d2.jpg" alt="Donor">
-                        <h4>Rahul Majhi</h4>
-                        <p>"I've seen firsthand how Ononto transforms communities. Every donation makes a real difference in people's lives."</p>
-                    </div>
-                    <div class="testimonial-card">
-                        <img src="pic/d3.jpg" alt="Donor">
-                        <h4>Haradhan Ghosh</h4>
-                        <p>"The team at Ononto is passionate about their work. It's wonderful to be part of such a meaningful cause."</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </nav>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
     </div>
+</header>
 
-    <footer class="footer">
-    <div class="footer-container">
-        <div class="footer-content">
-            <div class="footer-section brand-section">
-                <div class="brand-logo">Ononto</div>
-                <p>Empowering communities through sustainable development and innovative solutions. Together, we create lasting impact for a better tomorrow.</p>
+<!-- ===== MOBILE OVERLAY ===== -->
+<div class="menu-overlay" id="menuOverlay">
+    <div class="overlay-bar">
+        <span class="overlay-logo">Ononto Welfare</span>
+        <button class="overlay-close" id="overlayCloseBtn" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+</div>
+
+<!-- ============================================================
+     DONATE HERO
+     ============================================================ -->
+<section class="donate-hero">
+    <div class="donate-hero-bg"></div>
+    <div class="donate-hero-overlay"></div>
+    <div class="donate-hero-shapes">
+        <div class="dhs dhs-1"></div>
+        <div class="dhs dhs-2"></div>
+        <div class="dhs dhs-3"></div>
+    </div>
+    <div class="donate-hero-content">
+        <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Every Rupee Changes a Life
+        </div>
+        <h1 class="donate-hero-title">
+            <span class="hero-static">Support Our</span>
+            <span class="hero-highlight">Cause</span>
+        </h1>
+        <p class="donate-hero-sub">Your contribution fuels hope, feeds hunger, and transforms communities. Join thousands of donors making a real difference.</p>
+        <div class="donate-hero-actions">
+            <a href="#donate-main" class="btn-primary"><i class="fas fa-heart"></i><span>Donate Now</span></a>
+            <a href="about.html"   class="btn-outline"><span>Learn More</span><i class="fas fa-arrow-right"></i></a>
+        </div>
+        <!-- live stats -->
+        <div class="donate-hero-stats">
+            <div class="dhs-stat">
+                <span class="dhs-num">1500<sup>+</sup></span>
+                <span class="dhs-label">Lives Impacted</span>
             </div>
-            
-            <div class="footer-section quick-links">
-                <h3>Quick Links</h3>
+            <div class="dhs-divider"></div>
+            <div class="dhs-stat">
+                <span class="dhs-num">2000<sup>+</sup></span>
+                <span class="dhs-label">Meals Donated</span>
+            </div>
+            <div class="dhs-divider"></div>
+            <div class="dhs-stat">
+                <span class="dhs-num">100<sup>%</sup></span>
+                <span class="dhs-label">Transparency</span>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<!-- ============================================================
+     WHY DONATE
+     ============================================================ -->
+<section class="why-donate reveal-section">
+    <div class="container">
+        <div class="section-header centered-header">
+            <span class="section-tag">Your Impact</span>
+            <h2 class="section-title">Why Donate to <em>Ononto?</em></h2>
+            <p class="section-desc">Every donation, big or small, creates ripples of change across communities in Howrah.</p>
+        </div>
+        <div class="why-grid">
+            <div class="why-card reveal-card" data-delay="0">
+                <div class="why-icon"><i class="fas fa-utensils"></i></div>
+                <h4>Feed the Hungry</h4>
+                <p>₹50 provides a nutritious meal to a child. ₹500 feeds a family for a week. Every amount matters.</p>
+            </div>
+            <div class="why-card reveal-card" data-delay="100">
+                <div class="why-icon"><i class="fas fa-eye"></i></div>
+                <h4>Full Transparency</h4>
+                <p>Every rupee is accounted for. We publish impact reports and ensure your donation reaches those in need.</p>
+            </div>
+            <div class="why-card reveal-card" data-delay="200">
+                <div class="why-icon"><i class="fas fa-users"></i></div>
+                <h4>Community First</h4>
+                <p>We work directly with communities — no middlemen, no overhead. Your donation creates direct impact.</p>
+            </div>
+            <div class="why-card reveal-card" data-delay="300">
+                <div class="why-icon"><i class="fas fa-seedling"></i></div>
+                <h4>Sustainable Change</h4>
+                <p>Beyond meals, we build programs that create lasting self-sufficiency for families and communities.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     MAIN DONATE SECTION — QR + Methods
+     ============================================================ -->
+<section id="donate-main" class="donate-main-section reveal-section">
+    <div class="container">
+        <div class="section-header centered-header">
+            <span class="section-tag">Make a Donation</span>
+            <h2 class="section-title">Scan &amp; <em>Donate</em></h2>
+            <p class="section-desc">Use any UPI app — GPay, PhonePe, Paytm, or your bank app — to donate instantly.</p>
+        </div>
+
+        <div class="donate-main-grid">
+
+            <!-- QR Panel -->
+            <div class="qr-panel reveal-card" data-delay="0">
+                <div class="qr-glow"></div>
+                <div class="qr-badge"><i class="fas fa-qrcode"></i> Scan to Pay</div>
+                <div class="qr-img-wrap">
+                    <img src="pic/g.png" alt="Donation QR Code" class="qr-img">
+                    <div class="qr-scanner-line"></div>
+                </div>
+                <div class="qr-upi">
+                    <span class="upi-label">UPI ID</span>
+                    <div class="upi-value-row">
+                        <span class="upi-value" id="upiValue">6290652802@mbk</span>
+                        <button class="upi-copy" id="upiCopy" title="Copy UPI ID">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                    <span class="upi-copy-msg" id="upiCopyMsg">Copied!</span>
+                </div>
+                <div class="qr-apps">
+                    <span><i class="fas fa-mobile-alt"></i> Works with</span>
+                    <div class="qr-app-icons">
+                        <span>GPay</span>
+                        <span>PhonePe</span>
+                        <span>Paytm</span>
+                        <span>BHIM</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Methods Panel -->
+            <div class="methods-panel reveal-card" data-delay="150">
+                <h3 class="methods-title"><i class="fas fa-circle-nodes"></i> Other Ways to Support</h3>
+
+                <div class="method-card">
+                    <div class="method-icon"><i class="fas fa-building-columns"></i></div>
+                    <div class="method-body">
+                        <h4>Bank Transfer</h4>
+                        <p>Account details available upon request.</p>
+                        <a href="https://wa.me/916290652802" target="_blank" class="method-link">
+                            <i class="fab fa-whatsapp"></i> Contact on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <div class="method-card">
+                    <div class="method-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="method-body">
+                        <h4>Direct UPI</h4>
+                        <p>Pay directly via UPI ID:</p>
+                        <code>6290652802@mbk</code>
+                    </div>
+                </div>
+
+                <div class="method-card">
+                    <div class="method-icon"><i class="fas fa-phone"></i></div>
+                    <div class="method-body">
+                        <h4>Call Us</h4>
+                        <p>Reach us for large donations or partnerships.</p>
+                        <a href="tel:+916290652802" class="method-link">
+                            <i class="fas fa-phone"></i> +91 6290652802
+                        </a>
+                    </div>
+                </div>
+
+                <div class="method-card">
+                    <div class="method-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="method-body">
+                        <h4>Email Us</h4>
+                        <p>Send queries about donation or receipts.</p>
+                        <a href="mailto:ononto.welfare@gmail.com" class="method-link">
+                            <i class="fas fa-envelope"></i> ononto.welfare@gmail.com
+                        </a>
+                    </div>
+                </div>
+
+                <a href="query.html" class="btn-primary methods-cta">
+                    <i class="fas fa-comment-dots"></i><span>Have a Question? Contact Us</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     DONOR TESTIMONIALS
+     ============================================================ -->
+<section class="donor-testimonials reveal-section">
+    <div class="container">
+        <div class="section-header centered-header">
+            <span class="section-tag">Donor Stories</span>
+            <h2 class="section-title">What Our Donors <em>Say</em></h2>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial reveal-card" data-delay="0">
+                <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                <p>"Supporting Ononto has been incredibly rewarding. Their transparency and dedication to the cause is truly inspiring."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">
+                        <img src="pic/d1.jpg" alt="Tanushree Roy">
+                    </div>
+                    <div>
+                        <span class="testimonial-name">Tanushree Roy</span>
+                        <span class="testimonial-role">Donor</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial reveal-card" data-delay="150">
+                <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                <p>"I've seen firsthand how Ononto transforms communities. Every donation makes a real difference in people's lives."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">
+                        <img src="pic/d2.jpg" alt="Rahul Majhi">
+                    </div>
+                    <div>
+                        <span class="testimonial-name">Rahul Majhi</span>
+                        <span class="testimonial-role">Donor</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial reveal-card" data-delay="300">
+                <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                <p>"The team at Ononto is passionate about their work. It's wonderful to be part of such a meaningful cause."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">
+                        <img src="pic/d3.jpg" alt="Haradhan Ghosh">
+                    </div>
+                    <div>
+                        <span class="testimonial-name">Haradhan Ghosh</span>
+                        <span class="testimonial-role">Donor</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-grid container">
+            <div class="footer-brand">
+                <div class="footer-logo">Ononto</div>
+                <p>Empowering communities through sustainable development and innovative solutions. Together, we create lasting impact for a better tomorrow.</p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/share/14ZFZ2RHsVR/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/916290652802" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/ononto_welfare?igsh=MW8xN2wxcmp3aTVibQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ononto-welfare-06932a386?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-links-col">
+                <h4>Quick Links</h4>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="query.html">Query</a></li>
                     <li><a href="gallery.html">Our Work</a></li>
-                    <li><a href="gpay.html">Donate Us</a></li>
-                    <li><a href="member.html">Meet Our Members</a></li>
-                      <li><a href="bcv.html"><b>Become a Member</b></a></li>
+                    <li><a href="member.html">Members</a></li>
+                    <li><a href="query.html">Query</a></li>
+                    <li><a href="gpay.html">Donate</a></li>
+                    <li><a href="bcv.html"><strong>Become a Member</strong></a></li>
                 </ul>
             </div>
-
-            <div class="footer-section contact-info">
-                <h3>Contact Us</h3>
-                <p><i class="fas fa-envelope"></i>ononto.welfare@gmail.com</p>
-                <p><i class="fas fa-phone"></i>+91 6290652802 / 96744 57321</p>
-
-
-                <p><i class="fas fa-map-marker-alt"></i> Salkia, Howrah, WestBengal, India</p>
-            </div>
-
-            <div class="footer-section">
-                <h3>Connect With Us</h3>
-                <p>Join our community and stay updated with our latest initiatives.</p>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/profile.php?id=61567180577084&mibextid=ZbWKwL" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                   <a href="https://wa.me/919477611641" target="_blank">
-   <i class="fab fa-whatsapp"></i>
-</a>
-
-                    <a href="https://www.instagram.com/ononto.welfare?igsh=YmJ4bTNkOHM4b21u" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/ononto?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+            <div class="footer-contact-col">
+                <h4>Contact Us</h4>
+                <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>ononto.welfare@gmail.com</span></div>
+                <div class="footer-contact-item"><i class="fas fa-phone"></i><span>+91 6290652802 / 96744 57321</span></div>
+                <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Salkia, Howrah, West Bengal, India</span></div>
+                <a href="gpay.html" class="footer-donate-btn"><i class="fas fa-heart"></i> Donate Now</a>
             </div>
         </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2024 Ononto. All Rights Reserved. | Designed with ♥ by <a href="https://infinova.netlify.app"><span class="designer-credit">Infinova</span></a></p>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2026 Ononto. All Rights Reserved. | Designed by <a href="https://pritam03.netlify.app" target="_blank">Pritam</a></p>
         </div>
     </div>
 </footer>
 
+<script src="js/main.js"></script>
 <script src="js/gpay.js"></script>
 <script>
-(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="dDjZMxiWZldkdqePBr43W";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...a)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(a)};window.chatbase=new Proxy(window.chatbase,{get(t,p){if(p==="q")return t.q;return(...a)=>t(p,...a)}})}const l=function(){const s=document.createElement("script");s.src="https://www.chatbase.co/embed.min.js";s.id="dDjZMxiWZldkdqePBr43W";s.domain="www.chatbase.co";document.body.appendChild(s)};if(document.readyState==="complete")l();else window.addEventListener("load",l)})();
 </script>
-
-
 </body>
 </html>

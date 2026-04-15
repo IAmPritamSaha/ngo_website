@@ -3,163 +3,409 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join as Member</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-	<link href="css/bcv.css" rel="stylesheet">
-    <style>
-        .footer-bottom a {
-    text-decoration: none;
-}
-
-    </style>
+    <title>Ononto — Become a Member</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bcv.css">
 </head>
 <body>
-    <header>
-        <div class="nav-container">
-            <a href="index.html" class="logo">
-                <img src="pic/1.png" alt="Logo">
-                <span>Ononto</span>
+
+<!-- ===== HEADER ===== -->
+<header id="mainHeader">
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <img src="pic/1.png" alt="Ononto Logo">
+            <span class="logo-text">Ononto Welfare</span>
+        </a>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html"   class="nav-link">Home</a>
+            <a href="about.html"   class="nav-link">About</a>
+            <a href="gallery.html" class="nav-link">Our Work</a>
+            <a href="member.html"  class="nav-link">Members</a>
+            <a href="query.html"   class="nav-link">Query</a>
+            <a href="gpay.html"    class="nav-link nav-donate">
+                <i class="fas fa-heart"></i> Donate Now
             </a>
-            <nav class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="query.html">Query</a>
-                <a href="gpay.html">Donate Us</a>
-            </nav>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+        </nav>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<!-- ===== MOBILE OVERLAY ===== -->
+<div class="menu-overlay" id="menuOverlay">
+    <div class="overlay-bar">
+        <span class="overlay-logo">Ononto Welfare</span>
+        <button class="overlay-close" id="overlayCloseBtn" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+</div>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="bcv-hero">
+    <div class="bcv-hero-bg"></div>
+    <div class="bcv-hero-overlay"></div>
+    <div class="bcv-hero-shapes">
+        <div class="bhs bhs-1"></div>
+        <div class="bhs bhs-2"></div>
+        <div class="bhs bhs-3"></div>
+    </div>
+    <div class="bcv-hero-content">
+        <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Join the Movement
+        </div>
+        <h1 class="bcv-hero-title">
+            <span class="hero-static">Become a</span>
+            <span class="hero-highlight">Member</span>
+        </h1>
+        <p class="bcv-hero-sub">Be part of something bigger than yourself. Together we fight hunger, spread hope, and build stronger communities — one act of kindness at a time.</p>
+        <a href="#bcv-form" class="btn-primary bcv-hero-btn">
+            <i class="fas fa-user-plus"></i><span>Apply Now</span>
+        </a>
+    </div>
+
+</section>
+
+<!-- ============================================================
+     IMPORTANT NOTICE — Transparency Banner
+     ============================================================ -->
+<div class="transparency-banner reveal-section">
+    <div class="container">
+        <div class="tb-inner">
+            <div class="tb-icon">
+                <i class="fas fa-shield-halved"></i>
+            </div>
+            <div class="tb-text">
+                <h3>Our Commitment to Transparency</h3>
+                <p>
+                    <strong>Ononto does NOT pay any salary or compensation to its members or volunteers.</strong>
+                    Every member contributes <strong>₹50 per month</strong> from their own pocket.
+                    This monthly contribution is used <em>exclusively</em> to cover operational expenses
+                    such as travel, packaging, and logistics — so that <strong>100% of public donations
+                    go directly to feeding communities</strong> without any deduction for overheads.
+                    Join us knowing your time and ₹50/month create real, direct impact.
+                </p>
             </div>
         </div>
-    </header>
+    </div>
+</div>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Join Our Volunteer Community</h1>
-            <p>Make a difference in your community by joining our team of dedicated volunteers. Every helping hand counts!</p>
-        </div>
-    </section>
-
-    <section id="volunteer" class="volunteer section">
+<!-- ============================================================
+     HOW IT WORKS
+     ============================================================ -->
+<section class="how-it-works reveal-section">
     <div class="container">
-        <h2 class="section-title"><center><br>Join Our Volunteer Community!<br></center></h2>
-        <div class="form-container">
-            <form id="volunteerForm" class="volunteer-form" method="POST">
-                
-                <!-- Web3Forms Access Key -->
-                <input type="hidden" name="access_key" value="e4b784d8-04d9-461b-8a69-ed6697d1b34f">
-                
-                <!-- Recipient Email -->
-                <input type="hidden" name="reply_to" value="ononto.welfare@gmail.com">
+        <div class="section-header centered-header">
+            <span class="section-tag">Understand First</span>
+            <h2 class="section-title">How Membership <em>Works</em></h2>
+            <p class="section-desc">We believe in full transparency. Here's exactly what it means to be an Ononto member.</p>
+        </div>
+        <div class="hiw-grid">
 
-                <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter Your Full Name" required>
-                </div>
+            <div class="hiw-card reveal-card" data-delay="0">
+                <div class="hiw-step">01</div>
+                <div class="hiw-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                <h4>Volunteer Your Time</h4>
+                <p>Members voluntarily dedicate their time to Ononto's programmes — food distribution, events, outreach, and more. <strong>There is no salary or payment.</strong></p>
+            </div>
 
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="Enter Your Email (Ex: abc@gmail.com)" required>
-                </div>
+            <div class="hiw-card reveal-card" data-delay="120">
+                <div class="hiw-step">02</div>
+                <div class="hiw-icon hiw-accent"><i class="fas fa-coins"></i></div>
+                <h4>₹50 Monthly Contribution</h4>
+                <p>Each member contributes <strong>₹50 per month</strong> from their own pocket. This covers travel costs, packaging, and logistics for our programmes — <strong>not personal expenses.</strong></p>
+            </div>
 
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    
-                    <input  type="tel" pattern="[0-9]{10}"  id="phone" name="phone" placeholder="Enter 10-digit phone number ( Ex : 6290652802 )" required>
-                </div>
+            <div class="hiw-card reveal-card" data-delay="240">
+                <div class="hiw-step">03</div>
+                <div class="hiw-icon"><i class="fas fa-piggy-bank"></i></div>
+                <h4>Donations Stay Pure</h4>
+                <p>Because members self-fund operations via ₹50/month, <strong>every rupee donated by the public goes 100% to the cause</strong> — meals, food supplies, and community impact. Zero overhead deduction.</p>
+            </div>
 
-                <div class="form-group">
-                    <label for="availability">Availability</label>
-                    <select id="availability" name="availability" required>
-                        <option value="">Select Your Availability</option>
-                        <option value="weekdays">Work Days</option>
-                        <option value="weekends">Weekends</option>
-                        <option value="both">Both</option>
-                    </select>
-                </div>
+            <div class="hiw-card reveal-card" data-delay="360">
+                <div class="hiw-step">04</div>
+                <div class="hiw-icon"><i class="fas fa-users"></i></div>
+                <h4>Be Part of the Family</h4>
+                <p>You get a real role, real responsibility, and real community. Work alongside passionate people who share your values and create lasting friendships while making a difference.</p>
+            </div>
 
-                <div class="form-group">
-                    <label for="interests">Optimal location</label>
-                    <input type="text" id="name" name="name" placeholder="Ex : Howrah, WestBengal, India" required>
-                 <!--   <select id="interests" name="interests" required>
-                        <option value="">Select Your Area of Interest</option>
-                        <option value="education">Education</option>
-                        <option value="environment">Environment</option>
-                        <option value="healthcare">Healthcare</option>
-                        <option value="community">Community Service</option>
-                    </select> -->
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Why do you want to Join us?</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Tell us about your motivation to member" required></textarea>
-                </div>
-
-                <div class="submit-btn-container">
-                    <button type="submit" class="submit-btn">Submit Application</button>
-                </div>
-            </form>
         </div>
     </div>
 </section>
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-content">
-            <div class="footer-section brand-section">
-                <div class="brand-logo">Ononto</div>
-                <p>Empowering communities through sustainable development and innovative solutions. Together, we create lasting impact for a better tomorrow.</p>
+
+<!-- ============================================================
+     MEMBER BENEFITS
+     ============================================================ -->
+<section class="member-benefits reveal-section">
+    <div class="container">
+        <div class="section-header centered-header">
+            <span class="section-tag">What You Gain</span>
+            <h2 class="section-title">Member <em>Benefits</em></h2>
+            <p class="section-desc">Being a member isn't just giving — it's also growing. Here's what you'll take away.</p>
+        </div>
+        <div class="benefits-grid">
+            <div class="benefit-item reveal-item" data-delay="0">
+                <div class="benefit-icon"><i class="fas fa-certificate"></i></div>
+                <div class="benefit-text">
+                    <h4>Official Member Certificate</h4>
+                    <p>Receive an official Ononto membership certificate recognising your contribution to the community.</p>
+                </div>
             </div>
-            
-            <div class="footer-section quick-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="query.html">Query</a></li>
-                    <li><a href="gallery.html">Our Work</a></li>
-                    <li><a href="gpay.html">Donate Us</a></li>
-                    <li><a href="member.html">Meet Our Members</a></li>
-                      <li><a href="bcv.html"><b>Become a Member</b></a></li>
-                </ul>
+            <div class="benefit-item reveal-item" data-delay="80">
+                <div class="benefit-icon"><i class="fas fa-network-wired"></i></div>
+                <div class="benefit-text">
+                    <h4>Community Network</h4>
+                    <p>Build meaningful connections with like-minded individuals, local leaders, and change-makers across Howrah.</p>
+                </div>
             </div>
-
-            <div class="footer-section contact-info">
-                <h3>Contact Us</h3>
-                <p><i class="fas fa-envelope"></i>ononto.welfare@gmail.com</p>
-                <p><i class="fas fa-phone"></i>+91 6290652802 / 96744 57321</p>
-
-                <p><i class="fas fa-map-marker-alt"></i> Salkia, Howrah, WestBengal, India</p>
+            <div class="benefit-item reveal-item" data-delay="160">
+                <div class="benefit-icon"><i class="fas fa-star"></i></div>
+                <div class="benefit-text">
+                    <h4>Real-World Experience</h4>
+                    <p>Hands-on experience in event coordination, food distribution, community outreach, and social impact work.</p>
+                </div>
             </div>
-
-            <div class="footer-section">
-                <h3>Connect With Us</h3>
-                <p>Join our community and stay updated with our latest initiatives.</p>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/profile.php?id=61567180577084&mibextid=ZbWKwL" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                   <a href="https://wa.me/919477611641" target="_blank">
-   <i class="fab fa-whatsapp"></i>
-</a>
-
-                    <a href="https://www.instagram.com/ononto.welfare?igsh=YmJ4bTNkOHM4b21u" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/ononto?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <div class="benefit-item reveal-item" data-delay="240">
+                <div class="benefit-icon"><i class="fas fa-heart"></i></div>
+                <div class="benefit-text">
+                    <h4>Purpose & Fulfilment</h4>
+                    <p>The deepest benefit — the feeling of making a real difference in the lives of people who truly need help.</p>
+                </div>
+            </div>
+            <div class="benefit-item reveal-item" data-delay="320">
+                <div class="benefit-icon"><i class="fas fa-camera"></i></div>
+                <div class="benefit-text">
+                    <h4>Featured on Our Platform</h4>
+                    <p>Active members are featured on our Members page, social media, and programme coverage — your face to the world.</p>
+                </div>
+            </div>
+            <div class="benefit-item reveal-item" data-delay="400">
+                <div class="benefit-icon"><i class="fas fa-shield-halved"></i></div>
+                <div class="benefit-text">
+                    <h4>Ethical &amp; Transparent Culture</h4>
+                    <p>Be part of an organisation built on integrity — no hidden fees, no politics, just a genuine community of doers.</p>
                 </div>
             </div>
         </div>
+    </div>
+</section>
 
-        <div class="footer-bottom">
-            <p>&copy; 2024 Ononto. All Rights Reserved. | Designed with ♥ by <a href="https://infinova.netlify.app"><span class="designer-credit">Infinova</span></a></p>
+<!-- ============================================================
+     DISCLAIMER BOX
+     ============================================================ -->
+<section class="disclaimer-section reveal-section">
+    <div class="container">
+        <div class="disclaimer-box">
+            <div class="disclaimer-icon"><i class="fas fa-info-circle"></i></div>
+            <div class="disclaimer-content">
+                <h3>Please Read Before Applying</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> <strong>No salary, stipend, or financial compensation</strong> is provided to any member or volunteer at Ononto.</li>
+                    <li><i class="fas fa-check-circle"></i> Members contribute <strong>₹50 per month</strong> to cover programme operational costs (travel, packaging, logistics).</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Public donations are never used for member expenses.</strong> The ₹50/month ensures donation money goes 100% to communities.</li>
+                    <li><i class="fas fa-check-circle"></i> Membership is open to anyone aged 16+ who is passionate about community service.</li>
+                    <li><i class="fas fa-check-circle"></i> You may leave the organisation at any time with no obligations.</li>
+                    <li><i class="fas fa-check-circle"></i> By submitting this form, you confirm you understand and accept these terms.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     APPLICATION FORM
+     ============================================================ -->
+<section id="bcv-form" class="bcv-form-section reveal-section">
+    <div class="container">
+        <div class="bcv-form-grid">
+
+            <!-- Left info panel -->
+            <div class="bcv-info-panel">
+                <span class="section-tag light-tag">Ready to Join?</span>
+                <h2 class="bcv-panel-title">Fill Your<br><em>Application</em></h2>
+                <p class="bcv-panel-desc">Complete the form and our team will review your application within 3–5 working days. We'll contact you on WhatsApp or email.</p>
+
+                <div class="bcv-panel-facts">
+                    <div class="bpf-item">
+                        <div class="bpf-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <span class="bpf-label">Review Time</span>
+                            <span class="bpf-val">3–5 working days</span>
+                        </div>
+                    </div>
+                    <div class="bpf-item">
+                        <div class="bpf-icon"><i class="fas fa-coins"></i></div>
+                        <div>
+                            <span class="bpf-label">Monthly Contribution</span>
+                            <span class="bpf-val">₹50 / month (operational only)</span>
+                        </div>
+                    </div>
+                    <div class="bpf-item">
+                        <div class="bpf-icon"><i class="fas fa-calendar-check"></i></div>
+                        <div>
+                            <span class="bpf-label">Commitment</span>
+                            <span class="bpf-val">Flexible — as per availability</span>
+                        </div>
+                    </div>
+                    <div class="bpf-item">
+                        <div class="bpf-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <span class="bpf-label">Based In</span>
+                            <span class="bpf-val">Howrah &amp; surrounding areas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WhatsApp shortcut -->
+                <a href="https://wa.me/916290652802?text=Hi%20Ononto%2C%20I%20want%20to%20become%20a%20member!" target="_blank" class="bcv-wa-btn">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Or apply via WhatsApp</span>
+                </a>
+            </div>
+
+            <!-- Right form panel -->
+            <div class="bcv-form-panel">
+                <!-- Reminder strip inside form -->
+                <div class="form-reminder">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>Reminder: Membership is <strong>voluntary</strong>. No salary is paid. Members contribute <strong>₹50/month</strong> for operational expenses only.</span>
+                </div>
+
+                <form id="volunteerForm" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="e4b784d8-04d9-461b-8a69-ed6697d1b34f">
+                    <input type="hidden" name="reply_to"   value="ononto.welfare@gmail.com">
+                    <input type="hidden" name="subject"    value="New Member Application — Ononto">
+
+                    <div class="bf-row">
+                        <div class="bf-group">
+                            <label>Full Name <span>*</span></label>
+                            <div class="bf-input-wrap">
+                                <i class="fas fa-user"></i>
+                                <input type="text" name="name" placeholder="Your full name" required>
+                            </div>
+                        </div>
+                        <div class="bf-group">
+                            <label>Phone Number <span>*</span></label>
+                            <div class="bf-input-wrap">
+                                <i class="fas fa-phone"></i>
+                                <input type="tel" pattern="[0-9]{10}" name="phone" placeholder="10-digit number" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bf-group">
+                        <label>Email Address <span>*</span></label>
+                        <div class="bf-input-wrap">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" name="email" placeholder="abc@gmail.com" required>
+                        </div>
+                    </div>
+
+                    <div class="bf-row">
+                        <div class="bf-group">
+                            <label>Availability <span>*</span></label>
+                            <div class="bf-input-wrap bf-select-wrap">
+                                <i class="fas fa-calendar"></i>
+                                <select name="availability" required>
+                                    <option value="" disabled selected>Select availability</option>
+                                    <option value="Weekdays">Weekdays</option>
+                                    <option value="Weekends">Weekends</option>
+                                    <option value="Both">Both</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="bf-group">
+                            <label>Your Location <span>*</span></label>
+                            <div class="bf-input-wrap">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <input type="text" name="location" placeholder="e.g. Howrah, West Bengal" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bf-group">
+                        <label>Why do you want to join Ononto? <span>*</span></label>
+                        <div class="bf-input-wrap bf-ta">
+                            <i class="fas fa-comment-dots"></i>
+                            <textarea name="message" placeholder="Tell us your motivation, what skills you bring, and how you can contribute..." required></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Confirmation checkbox -->
+                    <div class="bf-checkbox-group">
+                        <label class="bf-checkbox-label">
+                            <input type="checkbox" name="confirmation" required>
+                            <span class="bf-checkmark"></span>
+                            <span>I understand that membership is <strong>voluntary with no salary</strong>, and I agree to contribute <strong>₹50/month</strong> for operational expenses. I confirm public donations are never used for member expenses.</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="bf-submit" id="bfSubmitBtn">
+                        <span>Submit Application</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+
+                    <div id="bf-message" style="display:none;"></div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-grid container">
+            <div class="footer-brand">
+                <div class="footer-logo">Ononto</div>
+                <p>Empowering communities through sustainable development and innovative solutions. Together, we create lasting impact for a better tomorrow.</p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/share/14ZFZ2RHsVR/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/916290652802" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/ononto_welfare?igsh=MW8xN2wxcmp3aTVibQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ononto-welfare-06932a386?utm_source=share_via&utm_content=profile&utm_medium=member_android-welfare-06932a386?utm_source=share_via&utm_content=profile&utm_medium=member_android-welfare-06932a386?utm_source=share_via&utm_content=profile&utm_medium=member_android-welfare-06932a386?utm_source=share_via&utm_content=profile&utm_medium=member_android-welfare-06932a386?utm_source=share_via&utm_content=profile&utm_medium=member_android-welfare-06932a386?utm_source=share_via&utm_content=profile&utm_medium=member_android-welfare-06932a386?utm_source=share_via&utm_content=profile&utm_medium=member_android-welfare-06932a386?utm_source=share_via&utm_content=profile&utm_medium=member_android-welfare-06932a386?utm_source=share_via&utm_content=profile&utm_medium=member_android-welfare-06932a386?utm_source=share_via&utm_content=profile&utm_medium=member_android-welfare-06932a386?utm_source=share_via&utm_content=profile&utm_medium=member_android-welfare-06932a386?utm_source=share_via&utm_content=profile&utm_medium=member_android-welfare-06932a386?utm_source=share_via&utm_content=profile&utm_medium=member_android-welfare-06932a386?utm_source=share_via&utm_content=profile&utm_medium=member_android-welfare-06932a386?utm_source=share_via&utm_content=profile&utm_medium=member_android-welfare-06932a386?utm_source=share_via&utm_content=profile&utm_medium=member_android-welfare-06932a386?utm_source=share_via&utm_content=profile&utm_medium=member_android-welfare-06932a386?utm_source=share_via&utm_content=profile&utm_medium=member_android-welfare-06932a386?utm_source=share_via&utm_content=profile&utm_medium=member_android-welfare-06932a386?utm_source=share_via&utm_content=profile&utm_medium=member_android-welfare-06932a386?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-links-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="gallery.html">Our Work</a></li>
+                    <li><a href="member.html">Members</a></li>
+                    <li><a href="query.html">Query</a></li>
+                    <li><a href="gpay.html">Donate</a></li>
+                    <li><a href="bcv.html"><strong>Become a Member</strong></a></li>
+                </ul>
+            </div>
+            <div class="footer-contact-col">
+                <h4>Contact Us</h4>
+                <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>ononto.welfare@gmail.com</span></div>
+                <div class="footer-contact-item"><i class="fas fa-phone"></i><span>+91 6290652802 / 96744 57321</span></div>
+                <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Salkia, Howrah, West Bengal, India</span></div>
+                <a href="gpay.html" class="footer-donate-btn"><i class="fas fa-heart"></i> Donate Now</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2026 Ononto. All Rights Reserved. | Designed by <a href="https://pritam03.netlify.app" target="_blank">Pritam</a></p>
         </div>
     </div>
 </footer>
-   <script src="js/bcv.js"></script>
 
-
-
+<script src="js/main.js"></script>
+<script src="js/bcv.js"></script>
 <script>
-(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="dDjZMxiWZldkdqePBr43W";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...a)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(a)};window.chatbase=new Proxy(window.chatbase,{get(t,p){if(p==="q")return t.q;return(...a)=>t(p,...a)}})}const l=function(){const s=document.createElement("script");s.src="https://www.chatbase.co/embed.min.js";s.id="dDjZMxiWZldkdqePBr43W";s.domain="www.chatbase.co";document.body.appendChild(s)};if(document.readyState==="complete")l();else window.addEventListener("load",l)})();
 </script>
-
-
 </body>
 </html>

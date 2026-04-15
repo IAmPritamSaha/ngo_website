@@ -3,431 +3,533 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ononto/Gallery</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-	<link rel="stylesheet" href="css/gallery.css">
-    <style>
-        .footer-bottom a {
-    text-decoration: none;
-}
-
-    </style>
+    <title>Ononto — Our Work</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/gallery.css">
 </head>
 <body>
-    <header>
-        <div class="nav-container">
-            <a href="index.html" class="logo">
-                <img src="pic/1.png" alt="Logo">
-                <span>Ononto</span>
+
+<!-- ===== HEADER ===== -->
+<header id="mainHeader">
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <img src="pic/1.png" alt="Ononto Logo">
+            <span class="logo-text">Ononto Welfare</span>
+        </a>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html"   class="nav-link">Home</a>
+            <a href="about.html"   class="nav-link">About</a>
+            <a href="gallery.html" class="nav-link">Our Work</a>
+            <a href="member.html"  class="nav-link">Members</a>
+            <a href="query.html"   class="nav-link">Query</a>
+            <a href="gpay.html"    class="nav-link nav-donate">
+                <i class="fas fa-heart"></i> Donate Now
             </a>
-            <nav class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="query.html">Query</a>
-                <a href="gpay.html">Donate Us</a>
-            </nav>
-            <div class="hamburger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
+        </nav>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<!-- ===== MOBILE OVERLAY ===== -->
+<div class="menu-overlay" id="menuOverlay">
+    <div class="overlay-bar">
+        <span class="overlay-logo">Ononto</span>
+        <button class="overlay-close" id="overlayCloseBtn" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+</div>
+
+<!-- ===== GALLERY HERO ===== -->
+<section class="gallery-hero">
+    <div class="gallery-hero-bg"></div>
+    <div class="gallery-hero-overlay"></div>
+    <div class="gallery-hero-content">
+        <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Our Journey in Pictures
         </div>
-    </header>
+        <h1 class="gallery-hero-title">
+            <span class="hero-static">Moments of</span>
+            <span class="hero-highlight">Impact</span>
+        </h1>
+        <p class="gallery-hero-sub">Explore our work through albums — organised by year and programme. Click any folder to see the full story.</p>
+    </div>
+</section>
 
-    <main class="gallery-container">
-        <div class="gallery-header">
-            <h1>Our Food Distribution Journey</h1>
-            <p>Witness our commitment to serving the community through these captured moments of hope and sustenance.</p>
+<!-- ============================================================
+     FOLDER VIEW — ONE container wraps ALL year sections
+     ============================================================ -->
+<main class="gallery-main">
+    <div class="container"><!-- ← opens ONCE, closes ONCE at bottom -->
+
+        <!-- ══════════════════════════════════════
+             YEAR: 2026 — 2027
+        ══════════════════════════════════════ -->
+        <div class="year-divider reveal-section">
+            <div class="year-line"></div>
+            <span class="year-label"><i class="fas fa-calendar"></i> 2026 — 2027</span>
+            <div class="year-line"></div>
         </div>
 
-        <section class="gallery-section">
-            <div class="filters">
-                <button class="filter-btn active" data-filter="all">All Photos</button>
-                <button class="filter-btn" data-filter="distribution">Distribution</button>
-                <button class="filter-btn" data-filter="preparation">Preparation</button>
-                <button class="filter-btn" data-filter="community">We’re Here</button>
+        <div class="folders-grid">
+
+            <div class="album-folder reveal-card" data-delay="0"
+                 data-title="Drawing Competition 2026"
+                 data-desc="Drawing Competition at Salkia Jatadhari Park, Howrah — fostering creativity and joy among children"
+                 data-tag="Competition Time & Checking Time"
+                 data-photos='["prog/draw/all_tg.jpeg","prog/draw/check_r.jpeg","prog/draw/check_r2.jpeg","prog/draw/comp.jpeg","prog/draw/comp_time.jpeg","prog/draw/comp_time2.jpeg","prog/draw/comp_time3.jpeg","prog/draw/comp_time4.jpeg","prog/draw/comp_time5.jpeg","prog/draw/comp_time6.jpeg","prog/draw/comp10.jpeg","prog/draw/comp11.jpeg","prog/draw/comp12.jpeg","prog/draw/comp13.jpeg","prog/draw/comp2.jpeg","prog/draw/comp3.jpeg","prog/draw/comp4.jpeg","prog/draw/comp5.jpeg","prog/draw/comp6.jpeg","prog/draw/comp7.jpeg","prog/draw/comp8.jpeg","prog/draw/comp9.jpeg","prog/draw/final_r.jpeg","prog/draw/final_r2.jpeg","prog/draw/final_r3.jpeg","prog/draw/final_r4.jpeg","prog/draw/food_dist.jpeg","prog/draw/food_dist2.jpeg","prog/draw/start.jpeg"]'>
+                <div class="folder-cover">
+                    <div class="folder-tab"></div>
+                    <div class="folder-body">
+                        <div class="folder-film-strip">
+                            <img src="prog/draw/comp.jpeg" alt="">
+                            <img src="prog/draw/comp2.jpeg" alt="">
+                            <img src="prog/draw/comp3.jpeg" alt="">
+                            <img src="prog/draw/comp4.jpeg" alt="">
+                            <img src="prog/draw/comp5.jpeg" alt="">
+                        </div>
+                        <div class="folder-thumb">
+                            <img src="prog/draw/comp7.jpeg" alt="Drawing Competition">
+                        </div>
+                    </div>
+                </div>
+                <div class="folder-info">
+                    <span class="folder-tag">Competition Time & Checking Time</span>
+                    <h3>Salkia, Howrah</h3>
+                    <p>Howrah · 29 photos</p>
+                </div>
             </div>
 
-            <div class="gallery-grid">
-                <!-- Example gallery items with actual paths - replace with your image paths -->
-                <div class="gallery-item" data-category="community">
-                    <img src="pic/work1.jpg" alt="Food Distribution Event">
-                    <div class="gallery-item-info">
-                        <h3>In Sivasram Orphanage</h3>
-                        <p>Providing meals to those in Sivasram Orphanage, Uttarpara</p>
-                  <!--      <span class="gallery-item-date">March 15, 2024</span> -->
+            <div class="album-folder reveal-card" data-delay="100"
+                 data-title="Drawing Competition 2026"
+                 data-desc="Drawing Competition at Salkia Jatadhari Park, Howrah — fostering creativity and joy among children"
+                 data-tag="Selection & Prizes"
+                 data-photos='["prog/draw/swa.jpeg","prog/draw/prize.jpeg","prog/draw/prize_dist.jpeg","prog/draw/prize_dist2.jpeg","prog/draw/selection.jpeg","prog/draw/selection2.jpeg","prog/draw/selection3.jpeg","prog/draw/r_check.jpeg","prog/draw/with_mam.jpeg","prog/draw/member.jpeg","prog/draw/member2.jpeg","prog/draw/form_sub.jpeg","prog/draw/form_sub2.jpeg","prog/draw/form_sub3.jpeg","prog/draw/form_sub4.jpeg","prog/draw/form_sub5.jpeg"]'>
+                <div class="folder-cover">
+                    <div class="folder-tab"></div>
+                    <div class="folder-body">
+                        <div class="folder-film-strip">
+                            <img src="prog/draw/selection.jpeg" alt="">
+                            <img src="prog/draw/selection3.jpeg" alt="">
+                            <img src="prog/draw/selection2.jpeg" alt="">
+                            <img src="prog/draw/form_sub5.jpeg" alt="">
+                            <img src="prog/draw/form_sub3.jpeg" alt="">
+                        </div>
+                        <div class="folder-thumb">
+                            <img src="prog/draw/member2.jpeg" alt="Drawing Competition">
+                        </div>
                     </div>
                 </div>
-                <div class="gallery-item" data-category="community">
-                    <img src="pic/work5.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Home of Hope</h3>
-                        <p>Bringing smiles and fresh meals to children, prepared with love by our members</p>
-                   
-                    </div>
+                <div class="folder-info">
+                    <span class="folder-tag">Selection & Prizes</span>
+                    <h3>Salkia, Howrah</h3>
+                    <p>Howrah · 16 photos</p>
                 </div>
-                <div class="gallery-item" data-category="preparation">
-                    <img src="pic/work12.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Preparation</h3>
-                        <p>Our volunteers preparing fresh meals with love and care.</p>
-                   
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="preparation">
-                    <img src="pic/work14.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Preparation</h3>
-                        <p>Sharing meals with those in need, one plate at a time.</p>
-                   
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="preparation">
-                    <img src="pic/work19.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Preparation</h3>
-                        <p>Our team works tirelessly to bring meals to those who need them most</p>
-                   
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="distribution">
-                    <img src="pic/work23.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Shared Meals, Shared Smiles</h3>
-                        <p>Children enjoying meals together in a safe and caring space.</p>
-                   
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="distribution">
-                    <img src="pic/work9.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3> Feeding with Care</h3>
-                        <p>Delivering food —our members ensure no one goes hungry.</p>
-                   
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="distribution">
-                    <img src="pic/work7.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Hands That Serve</h3>
-                        <p> Serve meals with care, dedication, and a whole lot of heart.</p>
-                   
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="distribution">
-                    <img src="pic/work11.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Dignity Through Food</h3>
-                        <p>Serving with kindness, one meal at a time.</p>
-                   
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="distribution">
-                    <img src="pic/work15.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Happiness Served Daily</h3>
-                        <p>Mealtimes filled with friendship, laughter, and full bellies.</p>
-                   
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="distribution">
-                    <img src="pic/work24.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Small Hands, Big Joy</h3>
-                        <p>A moment of peace and joy during shared meals.</p>
-                   
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="distribution">
-                    <img src="pic/work18.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Every Child Deserves a Meal</h3>
-                        <p>Ensuring no child goes hungry, one plate at a time.</p>
-                   
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="distribution">
-                    <img src="pic/work27.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Bright Futures Begin with Full Stomachs</h3>
-                        <p> Fueling dreams with each meal we serve.</p>
-                   
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="distribution">
-                    <img src="pic/work26.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3> Little Smiles, Big Appetites</h3>
-                        <p> Mealtime becomes magic when shared with friends and care.</p>
-                   
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="community">
-                    <img src="pic/work29.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3> From Our Hearts to Theirs</h3>
-                        <p>Members putting love into every bite for the children they serve.</p>
-                   
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="distribution">
-                    <img src="pic/work25.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>A Step Toward Wellness</h3>
-                        <p>Serving meals that fuel dreams, energy, and happiness.</p>
-                   
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="distribution">
-                    <img src="pic/work6.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Wholesome Meals, Happy Kids</h3>
-                        <p>Freshly prepared food served in a joyful and safe environment.
-
-                        </p>
-                   
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="distribution">
-                    <img src="pic/work3.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Eating Well, Growing Strong</h3>
-                        <p>Providing the nourishment every child needs to thrive.</p>
-                   
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="distribution">
-                    <img src="pic/work4.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Powered by Good Food</h3>
-                        <p>Delicious and balanced meals for a brighter, healthier tomorrow.</p>
-                   
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="distribution">
-                    <img src="pic/work2.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>From Our Hearts to Theirs</h3>
-                        <p>Volunteers putting love into every bite for the children they serve.</p>
-                   
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="distribution">
-                    <img src="pic/work8.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Heartfelt Hospitality</h3>
-                        <p>A simple gesture, a big impact—nourishment with dignity.</p>
-                   
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="distribution">
-                    <img src="pic/work10.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Full Plates, Full Hearts</h3>
-                        <p>Delicious meals shared in a space filled with warmth and laughter.</p>
-                   
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="distribution">
-                    <img src="pic/work13.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Meals with Meaning</h3>
-                        <p>More than just food—this is love made visible.</p>
-                   
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="distribution">
-                    <img src="pic/work17.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Love on Every Plate</h3>
-                        <p> Where every meal tells a story of compassion and community.</p>
-                   
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="distribution">
-                    <img src="pic/work20.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Feeding with Kindness</h3>
-                        <p>Serving food, spreading smiles, and showing care through action.</p>
-                   
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="distribution">
-                    <img src="pic/work22.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Together We Dine</h3>
-                        <p>Creating cherished moments around simple, nourishing meals.</p>
-                   
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="distribution">
-                    <img src="pic/work28.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Meals that Matter</h3>
-                        <p>Feeding the future with every bite, one child at a time.</p>
-                   
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="preparation">
-                    <img src="pic/work21.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Eating Well, Growing Strong</h3>
-                        <p>Providing the nourishment every child needs to thrive.</p>
-                   
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="community">
-                    <img src="pic/work30.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Happiness Served Daily</h3>
-                        <p>Mealtimes filled with friendship, laughter, and full bellies.</p>
-                   
-                    </div>
-                </div>
-                
-                <div class="gallery-item" data-category="preparation">
-                    <img src="pic/pic1.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Kitchen Preparation</h3>
-                        <p>Our volunteers preparing fresh meals with love and care.</p>
-                   
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="preparation">
-                    <img src="pic/pic2.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Kitchen Preparation</h3>
-                        <p>Our volunteers preparing fresh meals with love and care.</p>
-                   
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="preparation">
-                    <img src="pic/pic3.jpg" alt="Community Gathering">
-                    <div class="gallery-item-info">
-                        <h3>Kitchen Preparation</h3>
-                        <p>Bringing people together through food and compassion.</p>
-         
-                    </div>
-                </div>
-				 <div class="gallery-item" data-category="preparation">
-                    <img src="pic/pic4.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Kitchen Preparation</h3>
-                        <p>Our volunteers preparing fresh meals with love and care.</p>
-                   
-                    </div>
-                </div>
-				 <div class="gallery-item" data-category="preparation">
-                    <img src="pic/pic5.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Kitchen Preparation</h3>
-                        <p>Our volunteers preparing fresh meals with love and care.</p>
-                   
-                    </div>
-                </div>
-				 <div class="gallery-item" data-category="preparation">
-                    <img src="pic/pic6.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Kitchen Preparation</h3>
-                        <p>Our volunteers preparing fresh meals with love and care.</p>
-                   
-                    </div>
-                </div>
-				 <div class="gallery-item" data-category="distribution">
-                    <img src="pic/pic7.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Street Food Distribution</h3>
-                        <p>Our volunteers preparing fresh meals with love and care.</p>
-                   
-                    </div>
-                </div>
-				 <div class="gallery-item" data-category="distribution">
-                    <img src="pic/pic8.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Street Food Distribution</h3>
-                        <p>Our volunteers preparing fresh meals with love and care.</p>
-                   
-                    </div>
-                </div>
-								 <div class="gallery-item" data-category="distribution">
-                    <img src="pic/pic9.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Street Food Distribution</h3>
-                        <p>Our volunteers preparing fresh meals with love and care.</p>
-                   
-                    </div>
-                </div>
-			<!--	this is for when community arrived
-			<div class="gallery-item" data-category="community">
-                    <img src="pic/pic6.jpg" alt="Food Preparation">
-                    <div class="gallery-item-info">
-                        <h3>Community Meal</h3>
-                        <p>Our volunteers preparing fresh meals with love and care.</p>
-                   
-                    </div>
-                </div> -->
-
-                <!-- Add more gallery items as needed -->
             </div>
-        </section>
-    </main>
-    <footer class="footer">
-    <div class="footer-container">
-        <div class="footer-content">
-            <div class="footer-section brand-section">
-                <div class="brand-logo">Ononto</div>
-                <p>Empowering communities through sustainable development and innovative solutions. Together, we create lasting impact for a better tomorrow.</p>
+
+            <div class="album-folder reveal-card" data-delay="200"
+                 data-title="Drawing Competition 2026"
+                 data-desc="Drawing Competition at Salkia Jatadhari Park, Howrah — fostering creativity and joy among children"
+                 data-tag="Certificate & Refreshments"
+                 data-photos='["prog/draw/cer1.jpeg","prog/draw/cer2.jpeg","prog/draw/cer3.jpeg","prog/draw/cer4.jpeg","prog/draw/cer5.jpeg","prog/draw/cert_prize.jpeg","prog/draw/certificate _1.jpeg","prog/draw/break_time.jpeg"]'>
+                <div class="folder-cover">
+                    <div class="folder-tab"></div>
+                    <div class="folder-body">
+                        <div class="folder-film-strip">
+                            <img src="prog/draw/cer1.jpeg" alt="">
+                            <img src="prog/draw/cer2.jpeg" alt="">
+                            <img src="prog/draw/cer3.jpeg" alt="">
+                            <img src="prog/draw/cer4.jpeg" alt="">
+                            <img src="prog/draw/cer5.jpeg" alt="">
+                        </div>
+                        <div class="folder-thumb">
+                            <img src="prog/draw/with_mam.jpeg" alt="Drawing Competition">
+                        </div>
+                    </div>
+                </div>
+                <div class="folder-info">
+                    <span class="folder-tag">Certificate & Refreshments</span>
+                    <h3>Salkia, Howrah</h3>
+                    <p>Howrah · 8 photos</p>
+                </div>
+            </div>
+
+        </div><!-- /folders-grid 2026-2027 -->
+
+
+        <!-- ══════════════════════════════════════
+             YEAR: 2025 — 2026
+        ══════════════════════════════════════ -->
+        <div class="year-divider reveal-section">
+            <div class="year-line"></div>
+            <span class="year-label"><i class="fas fa-calendar"></i> 2025 — 2026</span>
+            <div class="year-line"></div>
+        </div>
+
+        <div class="folders-grid">
+
+            <div class="album-folder reveal-card" data-delay="0"
+                 data-title="Educational Support at Nari-sakti"
+                 data-desc="Providing educational materials and support to empower underprivileged children at Nari-sakti, Baruipur"
+                 data-tag="Community"
+                 data-photos='["prog/happy_faces.jpeg","prog/happy_ faces4.jpeg","prog/happy_faces2.jpeg","prog/happy_faces3.jpeg","prog/happy_faces5.jpeg","prog/happy_faces7.jpeg"]'>
+                <div class="folder-cover">
+                    <div class="folder-tab"></div>
+                    <div class="folder-body">
+                        <div class="folder-film-strip">
+                            <img src="prog/happy_faces.jpeg" alt="">
+                            <img src="prog/happy_ faces4.jpeg" alt="">
+                            <img src="prog/donation_pic3.jpeg" alt="">
+                            <img src="prog/donation_pic4.jpeg" alt="">
+                            <img src="prog/happy_faces5.jpeg" alt="">
+                        </div>
+                        <div class="folder-thumb">
+                            <img src="prog/all_tog.png" alt="Nari-Sakti">
+                        </div>
+                    </div>
+                </div>
+                <div class="folder-info">
+                    <span class="folder-tag">Community</span>
+                    <h3>Nari-Sakti</h3>
+                    <p>Baruipur · 6 photos</p>
+                </div>
+            </div>
+
+            <div class="album-folder reveal-card" data-delay="100"
+                 data-title="Smiles of Hope"
+                 data-desc="Bringing smiles and fresh meals to children prepared with love"
+                 data-tag="Community"
+                 data-photos='["prog/all_tog.png","prog/donation_pic.jpeg","prog/donation_pic2.jpeg","prog/donation_pic3.jpeg","prog/donation_pic4.jpeg","prog/members.jpeg","prog/nari_sakti(p,a,s).jpeg","prog/nari_sakti(p,s,s).jpeg","prog/nars_saktis,(s,a,p).jpeg","prog/preparation.jpeg","prog/preparation2.jpeg","prog/unnamed.jpg"]'>
+                <div class="folder-cover">
+                    <div class="folder-tab"></div>
+                    <div class="folder-body">
+                        <div class="folder-film-strip">
+                            <img src="prog/donation_pic.jpeg" alt="">
+                            <img src="prog/happy_faces7.jpeg" alt="">
+                            <img src="prog/nars_saktis,(s,a,p).jpeg" alt="">
+                            <img src="prog/donation_pic4.jpeg" alt="">
+                            <img src="prog/preparation2.jpeg" alt="">
+                        </div>
+                        <div class="folder-thumb">
+                            <img src="prog/happy_faces7.jpeg" alt="Smiles of Hope">
+                        </div>
+                    </div>
+                </div>
+                <div class="folder-info">
+                    <span class="folder-tag">Community</span>
+                    <h3>Smiles of Hope</h3>
+                    <p>Baruipur · 12 photos</p>
+                </div>
+            </div>
+
+        </div><!-- /folders-grid 2025-2026 -->
+
+
+        <!-- ══════════════════════════════════════
+             YEAR: 2024 — 2025
+        ══════════════════════════════════════ -->
+        <div class="year-divider reveal-section">
+            <div class="year-line"></div>
+            <span class="year-label"><i class="fas fa-calendar"></i> 2024 — 2025</span>
+            <div class="year-line"></div>
+        </div>
+
+        <div class="folders-grid">
+
+            <div class="album-folder reveal-card" data-delay="0"
+                 data-title="Sivasram Orphanage"
+                 data-desc="Providing meals to children at Sivasram Orphanage, Uttarpara"
+                 data-tag="Community"
+                 data-photos='["pic/work1.jpg","pic/work5.jpg","pic/work9.jpg","pic/work7.jpg","pic/work11.jpg"]'>
+                <div class="folder-cover">
+                    <div class="folder-tab"></div>
+                    <div class="folder-body">
+                        <div class="folder-film-strip">
+                            <img src="pic/work1.jpg" alt="">
+                            <img src="pic/work5.jpg" alt="">
+                            <img src="pic/work9.jpg" alt="">
+                            <img src="pic/work7.jpg" alt="">
+                            <img src="pic/work11.jpg" alt="">
+                        </div>
+                        <div class="folder-thumb">
+                            <img src="pic/work1.jpg" alt="Sivasram Orphanage">
+                        </div>
+                    </div>
+                </div>
+                <div class="folder-info">
+                    <span class="folder-tag">Community</span>
+                    <h3>Sivasram Orphanage</h3>
+                    <p>Uttarpara · 5 photos</p>
+                </div>
+            </div>
+
+            <div class="album-folder reveal-card" data-delay="100"
+                 data-title="Home of Hope"
+                 data-desc="Bringing smiles and fresh meals to children prepared with love"
+                 data-tag="Community"
+                 data-photos='["pic/work5.jpg","pic/work23.jpg","pic/work24.jpg","pic/work26.jpg","pic/work30.jpg"]'>
+                <div class="folder-cover">
+                    <div class="folder-tab"></div>
+                    <div class="folder-body">
+                        <div class="folder-film-strip">
+                            <img src="pic/work5.jpg" alt="">
+                            <img src="pic/work23.jpg" alt="">
+                            <img src="pic/work24.jpg" alt="">
+                            <img src="pic/work26.jpg" alt="">
+                            <img src="pic/work30.jpg" alt="">
+                        </div>
+                        <div class="folder-thumb">
+                            <img src="pic/work5.jpg" alt="Home of Hope">
+                        </div>
+                    </div>
+                </div>
+                <div class="folder-info">
+                    <span class="folder-tag">Community</span>
+                    <h3>Home of Hope</h3>
+                    <p>Howrah · 5 photos</p>
+                </div>
+            </div>
+
+            <div class="album-folder reveal-card" data-delay="200"
+                 data-title="Kitchen & Preparation"
+                 data-desc="Our volunteers preparing fresh meals with love and care"
+                 data-tag="Preparation"
+                 data-photos='["pic/work12.jpg","pic/work14.jpg","pic/work19.jpg","pic/work21.jpg"]'>
+                <div class="folder-cover">
+                    <div class="folder-tab"></div>
+                    <div class="folder-body">
+                        <div class="folder-film-strip">
+                            <img src="pic/work12.jpg" alt="">
+                            <img src="pic/work14.jpg" alt="">
+                            <img src="pic/work19.jpg" alt="">
+                            <img src="pic/pic1.jpg" alt="">
+                            <img src="pic/pic2.jpg" alt="">
+                        </div>
+                        <div class="folder-thumb">
+                            <img src="pic/work12.jpg" alt="Kitchen">
+                        </div>
+                    </div>
+                </div>
+                <div class="folder-info">
+                    <span class="folder-tag preparation">Preparation</span>
+                    <h3>Kitchen & Preparation</h3>
+                    <p>Behind the scenes · 10 photos</p>
+                </div>
+            </div>
+
+            <div class="album-folder reveal-card" data-delay="300"
+                 data-title="Food Distribution Drive"
+                 data-desc="Serving meals with kindness, one plate at a time"
+                 data-tag="Distribution"
+                 data-photos='["pic/work23.jpg","pic/work9.jpg","pic/work7.jpg","pic/work11.jpg","pic/work15.jpg","pic/work24.jpg","pic/work18.jpg","pic/work27.jpg","pic/work26.jpg"]'>
+                <div class="folder-cover">
+                    <div class="folder-tab"></div>
+                    <div class="folder-body">
+                        <div class="folder-film-strip">
+                            <img src="pic/work23.jpg" alt="">
+                            <img src="pic/work9.jpg" alt="">
+                            <img src="pic/work11.jpg" alt="">
+                            <img src="pic/work15.jpg" alt="">
+                            <img src="pic/work18.jpg" alt="">
+                        </div>
+                        <div class="folder-thumb">
+                            <img src="pic/work23.jpg" alt="Distribution">
+                        </div>
+                    </div>
+                </div>
+                <div class="folder-info">
+                    <span class="folder-tag distribution">Distribution</span>
+                    <h3>Food Distribution Drive</h3>
+                    <p>Multiple locations · 12 photos</p>
+                </div>
+            </div>
+
+            
+            <div class="album-folder reveal-card" data-delay="500"
+                 data-title="Children & Smiles"
+                 data-desc="Every child deserves a meal — and a reason to smile"
+                 data-tag="Community"
+                 data-photos='["pic/work23.jpg","pic/work24.jpg","pic/work26.jpg","pic/work18.jpg","pic/work15.jpg","pic/work27.jpg","pic/work30.jpg"]'>
+                <div class="folder-cover">
+                    <div class="folder-tab"></div>
+                    <div class="folder-body">
+                        <div class="folder-film-strip">
+                            <img src="pic/work24.jpg" alt="">
+                            <img src="pic/work26.jpg" alt="">
+                            <img src="pic/work18.jpg" alt="">
+                            <img src="pic/work15.jpg" alt="">
+                            <img src="pic/work30.jpg" alt="">
+                        </div>
+                        <div class="folder-thumb">
+                            <img src="pic/work24.jpg" alt="Children">
+                        </div>
+                    </div>
+                </div>
+                <div class="folder-info">
+                    <span class="folder-tag">Community</span>
+                    <h3>Children &amp; Smiles</h3>
+                    <p>Joy captured · 7 photos</p>
+                </div>
             </div>
             
-            <div class="footer-section quick-links">
-                <h3>Quick Links</h3>
+
+        </div><!-- /folders-grid 2024-2025 -->
+<!-- ══════════════════════════════════════
+             YEAR: 2024 — 2025
+        ══════════════════════════════════════ -->
+        <div class="year-divider reveal-section">
+            <div class="year-line"></div>
+            <span class="year-label"><i class="fas fa-calendar"></i> 2024 — 2025</span>
+            <div class="year-line"></div>
+        </div>
+
+        <div class="folders-grid">
+
+           <div class="album-folder reveal-card" data-delay="400"
+                 data-title="Street Food Drive"
+                 data-desc="Taking meals directly to the streets — no one left behind"
+                 data-tag="Distribution"
+                 data-photos='["prog/2024/w1.jpeg","prog/2024/w2.jpeg","prog/2024/w3.jpeg","prog/2024/w4.jpeg","prog/2024/w5.jpeg","prog/2024/w6.jpeg","prog/2024/w7.jpeg","prog/2024/w8.jpeg","prog/2024/w9.jpeg","prog/2024/w10.jpeg"]'>
+                <div class="folder-cover">
+                    <div class="folder-tab"></div>
+                    <div class="folder-body">
+                        <div class="folder-film-strip">
+                            <img src="prog/2024/w1.jpeg" alt="">
+                            <img src="prog/2024/w2.jpeg" alt="">
+                            <img src="prog/2024/w3.jpeg" alt="">
+                            <img src="prog/2024/w4.jpeg" alt="">
+                            <img src="prog/2024/w5.jpeg" alt="">
+                        </div>
+                        <div class="folder-thumb">
+                            <img src="prog/2024/w5.jpeg" alt="Street Drive">
+                        </div>
+                    </div>
+                </div>
+                <div class="folder-info">
+                    <span class="folder-tag distribution">Distribution</span>
+                    <h3>Street Food Drive</h3>
+                    <p>Salkia, Howrah · 10 photos</p>
+                </div>
+            </div>
+        </div>
+<!-- ══════════════════════════════════════
+             YEAR: 2024 — 2025
+        ══════════════════════════════════════ -->
+        <div class="year-divider reveal-section">
+            <div class="year-line"></div>
+            <span class="year-label"><i class="fas fa-calendar"></i> 2021 - 2024</span>
+            <div class="year-line"></div>
+        </div>
+
+        <div class="folders-grid">
+
+           <div class="album-folder reveal-card" data-delay="400"
+                 data-title="Street Food Drive"
+                 data-desc="Taking meals directly to the streets — no one left behind"
+                 data-tag="Distribution"
+                 data-photos='["pic/pic1.jpg","pic/pic2.jpg","pic/pic3.jpg","pic/pic4.jpg","pic/pic5.jpg","pic/pic6.jpg","pic/pic7.jpg","pic/pic8.jpg","pic/pic9.jpg"]'>
+                <div class="folder-cover">
+                    <div class="folder-tab"></div>
+                    <div class="folder-body">
+                        <div class="folder-film-strip">
+                            <img src="pic/pic7.jpg" alt="">
+                            <img src="pic/pic8.jpg" alt="">
+                            <img src="pic/pic9.jpg" alt="">
+                            <img src="pic/pic6.jpg" alt="">
+                            <img src="pic/pic5.jpg" alt="">
+                        </div>
+                        <div class="folder-thumb">
+                            <img src="pic/pic5.jpg" alt="Street Drive">
+                        </div>
+                    </div>
+                </div>
+                <div class="folder-info">
+                    <span class="folder-tag distribution">Distribution</span>
+                    <h3>Street Food Drive</h3>
+                    <p>Salkia, Howrah · 9 photos</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div><!-- /container — closes ONE time here -->
+</main>
+
+<!-- ===== LIGHTBOX ===== -->
+<div class="lightbox" id="lightbox">
+    <div class="lb-backdrop" id="lbBackdrop"></div>
+    <div class="lb-panel">
+        <div class="lb-header">
+            <div class="lb-title-group">
+                <span class="lb-tag" id="lbTag"></span>
+                <h2 class="lb-title" id="lbTitle"></h2>
+                <p class="lb-desc" id="lbDesc"></p>
+            </div>
+            <button class="lb-close" id="lbClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="lb-stage">
+            <button class="lb-arrow lb-prev" id="lbPrev"><i class="fas fa-chevron-left"></i></button>
+            <div class="lb-img-wrap">
+                <img src="" alt="" id="lbImg" class="lb-img">
+                <div class="lb-counter" id="lbCounter">1 / 5</div>
+            </div>
+            <button class="lb-arrow lb-next" id="lbNext"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="lb-thumbs" id="lbThumbs"></div>
+    </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-grid container">
+            <div class="footer-brand">
+                <div class="footer-logo">Ononto</div>
+                <p>Empowering communities through sustainable development and innovative solutions. Together, we create lasting impact for a better tomorrow.</p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/share/14ZFZ2RHsVR/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/916290652802" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/ononto_welfare?igsh=MW8xN2wxcmp3aTVibQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ononto-welfare-06932a386?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-links-col">
+                <h4>Quick Links</h4>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="query.html">Query</a></li>
                     <li><a href="gallery.html">Our Work</a></li>
-                    <li><a href="gpay.html">Donate Us</a></li>
-                    <li><a href="member.html">Meet Our Members</a></li>
-                      <li><a href="bcv.html"><b>Become a Member</b></a></li>
+                    <li><a href="member.html">Members</a></li>
+                    <li><a href="query.html">Query</a></li>
+                    <li><a href="gpay.html">Donate</a></li>
+                    <li><a href="bcv.html"><strong>Become a Member</strong></a></li>
                 </ul>
             </div>
-
-            <div class="footer-section contact-info">
-                <h3>Contact Us</h3>
-                <p><i class="fas fa-envelope"></i>ononto.welfare@gmail.com</p>
-                <p><i class="fas fa-phone"></i>+91 6290652802 / 96744 57321</p>
-
-                <p><i class="fas fa-map-marker-alt"></i> Salkia, Howrah, WestBengal, India</p>
-            </div>
-
-            <div class="footer-section">
-                <h3>Connect With Us</h3>
-                <p>Join our community and stay updated with our latest initiatives.</p>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/profile.php?id=61567180577084&mibextid=ZbWKwL" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                   <a href="https://wa.me/919477611641" target="_blank">
-   <i class="fab fa-whatsapp"></i>
-</a>
-
-                    <a href="https://www.instagram.com/ononto.welfare?igsh=YmJ4bTNkOHM4b21u" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/ononto?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+            <div class="footer-contact-col">
+                <h4>Contact Us</h4>
+                <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>ononto.welfare@gmail.com</span></div>
+                <div class="footer-contact-item"><i class="fas fa-phone"></i><span>+91 6290652802 / 9674457321</span></div>
+                <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Salkia, Howrah, West Bengal, India</span></div>
+                <a href="gpay.html" class="footer-donate-btn"><i class="fas fa-heart"></i> Donate Now</a>
             </div>
         </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2024 Ononto. All Rights Reserved. | Designed with ♥ by <a href="https://infinova.netlify.app"><span class="designer-credit">Infinova</span></a></p>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2026 Ononto. All Rights Reserved. | Designed by <a href="https://pritam03.netlify.app" target="_blank">Pritam</a></p>
         </div>
     </div>
 </footer>
 
- <script src="js/gallery.js"></script>
- <script>
-(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="dDjZMxiWZldkdqePBr43W";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+<script src="js/main.js"></script>
+<script src="js/gallery.js"></script>
+<script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...a)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(a)};window.chatbase=new Proxy(window.chatbase,{get(t,p){if(p==="q")return t.q;return(...a)=>t(p,...a)}})}const l=function(){const s=document.createElement("script");s.src="https://www.chatbase.co/embed.min.js";s.id="dDjZMxiWZldkdqePBr43W";s.domain="www.chatbase.co";document.body.appendChild(s)};if(document.readyState==="complete")l();else window.addEventListener("load",l)})();
 </script>
-
-
 </body>
 </html>
