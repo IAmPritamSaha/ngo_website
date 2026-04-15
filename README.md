@@ -1,55 +1,38 @@
-<h1 align="center">🚀Ngo Website</h1>
+# 🌍 Ononto NGO - Modern Web Solution
 
-<p align="center">
-  <strong>A modern, responsive, and performance-optimized web solution</strong><br>
-  <em>Built with passion · Designed for users · Scalable for the future</em>
-</p>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/your-netlify-id/deploy-status)](https://ononto.netlify.app)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/IAmPritamSaha/ngo_website/blob/main/LICENSE.md)
 
-<p align="center">
-  <a href="#"><img src="https://img.shields.io/badge/TechStack-HTML%2FCSS%2FJS%2FPHP-blueviolet?style=for-the-badge"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Responsive-Design-success?style=for-the-badge"></a>
-  <a href="#"><img src="https://img.shields.io/badge/UX-Focused-orange?style=for-the-badge"></a>
-</p>
+**Ononto** is a high-performance, fully responsive website designed for NGOs to bridge the gap between social causes and digital accessibility. It features a sleek dark-themed UI/UX, real-time location features, and a seamless donation flow.
+
+🔗 **Live Demo:** [ononto.netlify.app](https://ononto.netlify.app)
 
 ---
 
-## ✨ Features
+## ✨ Key Features
 
-- 🔥 Clean & elegant dark UI
-- 📱 Fully responsive for all devices
-- 🧭 Location-aware design (optional)
-- ⚡ Fast load time & performance
-- 🧩 Modular & easy-to-extend structure
+* **🌙 Premium Dark Aesthetics:** A modern, eye-catching dark theme optimized for readability and visual impact.
+* **📱 Ultra-Responsive:** Pixel-perfect layout across desktops, tablets, and mobile devices.
+* **📍 Location-Aware Features:** Integrated tools to help users find local NGO initiatives or events.
+* **💳 Integrated Donation UI:** Clean, trustworthy payment interfaces (including Google Pay integration).
+* **⚡ Performance Optimized:** Minimalistic code structure for lightning-fast loading speeds.
 
----
+## 🛠️ Tech Stack
 
-## 🧠 Tech Stack
+| Category | Technologies |
+| :--- | :--- |
+| **Frontend** | HTML5, CSS3 (Flexbox/Grid), JavaScript (ES6+) |
+| **Icons & Fonts** | FontAwesome, Google Fonts |
+| **Deployment** | Netlify |
 
-| Frontend        | Backend     | Database   |
-|-----------------|-------------|------------|
-| HTML5 / CSS3    |
-| JavaScript (ES6)| REST Ready  |
+## 📂 Project Structure
 
----
-
-## 📸 Preview
-
-> _"Design is not just what it looks like — it's how it works."_  
-*(Add your screenshot below)*
-
-<!-- Replace the image URL with your own -->
-<!-- ![Preview](https://your-image-url.com) -->
-
----
-
-## 🤝 Contributing
-
-Pull requests and feature suggestions are welcome!  
-Fork the repo, improve it, and open a PR.
-
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](./LICENSE.md)  
-© 2025 [Pritam Saha](https://github.com/yourusername)
+```text
+ngo_website/
+├── css/                # Custom stylesheets
+├── js/                 # Interactive logic and animations
+├── index.html          # Main landing page
+├── about.html          # Mission and Vision
+├── member.html         # Team and community
+├── gpay.html           # Secure donation portal
+└── [Assets]            # Optimized project images
